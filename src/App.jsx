@@ -30,7 +30,6 @@ function App() {
       <h2>{location.display_name}</h2>
       <p>latitude: {latitude}</p>
       <p>longitude: {location.lon}</p>
-      <img src="https://maps.locationiq.com/v3/staticmap?key=${API_KEY}&center=${location},${location}&zoom=16" />
     </>
   );
 }

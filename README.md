@@ -17,9 +17,9 @@ City Explorer
 
 ## Change Log
 
-<!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
-
-01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
+- 30-10-23 16:00 - Application now has a form and input.
+- 31-10-24 10:00 - Application now shows map on form input.
+- 31-10-24 15:20 - Application files are uploaded.
 
 ## Credit and Collaborations
 

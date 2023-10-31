@@ -18,8 +18,8 @@ City Explorer
 ## Change Log
 
 - 30-10-23 16:00 - Application now has a form and input.
-- 31-10-24 10:00 - Application now shows map on form input.
-- 31-10-24 15:20 - Application files are uploaded.
+- 31-10-23 10:00 - Application now shows map on form input.
+- 31-10-23 15:20 - Application files are uploaded.
 
 ## Credit and Collaborations
 

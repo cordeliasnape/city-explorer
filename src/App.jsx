@@ -31,7 +31,7 @@ function App() {
       <div className="display">
         <p>Longitude: {location.lon}</p>
         <p>Latitude: {location.lat}</p>
-        <h2>City: {location.display_name}</h2>
+        <h2>Location: {location.display_name}</h2>
         <img
           src={`https://maps.locationiq.com/v3/staticmap?key=${API_KEY}&center=${location.lat},${location.lon}>&zoom=13&format=png`}
         />

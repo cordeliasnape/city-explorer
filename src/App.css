@@ -1,24 +1,49 @@
+colours {
+  color: #ffe066;
+  color: #feeeec;
+  color: #b7adcf;
+  color: #335cb1;
+  color: #70c1b3;
+}
+
+* {
+  overflow: hidden;
+}
+
 main {
   display: flex;
   font-family: monospace;
+  background-color: #b7adcf;
 }
 
 .search {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 30vw;
   padding: 20px;
 }
 
 h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 20vh;
-  margin: 30px auto;
+  width: 30vw;
+  color: #ffe066;
+  background-color: #335cb1;
+  font-size: 40px;
 }
 
 form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  border: solid 4px #70c1b3;
+  background-color: #a5cbc5;
+  padding: 20px;
+  width: fit-content;
 }
 
 input {
@@ -36,11 +61,19 @@ input {
   display: flex;
   flex-direction: column-reverse;
   height: 100vh;
-  justify-content: center;
+  width: 70vw;
+  justify-content: align;
   align-items: center;
+  background-color: #feeeec;
 }
 
 img {
   width: 550px;
   height: 550px;
+  border: 5px solid #ffe066;
+}
+
+p,
+h2 {
+  color: #335cb1;
 }

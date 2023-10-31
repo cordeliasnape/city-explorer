@@ -7,7 +7,6 @@ const API_KEY = import.meta.env.VITE_API_KEY;
 function App() {
   const [location, setLocation] = useState({});
   const [search, setSearch] = useState("");
-  // const [map, getMap] = useState({});
 
   function handleChange(event) {
     setSearch(event.target.value);
@@ -24,12 +23,17 @@ function App() {
     <>
       <h1>City Locator</h1>
       <form onSubmit={getLocation}>
-        <input onChange={handleChange} placeholder="location" />
+        <input onChange={handleChange} placeholder="Location" />
         <button>Explore!</button>
       </form>
+
       <h2>{location.display_name}</h2>
-      <p>latitude: {location.lan}</p>
-      <p>longitude: {location.lon}</p>
+      <p>
+        latitude: {location.lat}, longitude: {location.lon}
+      </p>
+      <img
+        src={`https://maps.locationiq.com/v3/staticmap?key=${API_KEY}&center=${location.lat},${location.lon}>&zoom=13&format=png`}
+      />
     </>
   );
 }

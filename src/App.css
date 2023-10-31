@@ -1,0 +1,46 @@
+main {
+  display: flex;
+  font-family: monospace;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  padding: 20px;
+}
+
+h1 {
+  height: 20vh;
+  margin: 30px auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  height: 6vh;
+  width: 20vw;
+}
+
+.explore-btn {
+  height: 5vh;
+  width: 10vw;
+  margin: 20px;
+}
+
+.display {
+  display: flex;
+  flex-direction: column-reverse;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 550px;
+  height: 550px;
+}

@@ -20,21 +20,23 @@ function App() {
   }
 
   return (
-    <>
-      <h1>City Locator</h1>
-      <form onSubmit={getLocation}>
-        <input onChange={handleChange} placeholder="Location" />
-        <button>Explore!</button>
-      </form>
-
-      <h2>{location.display_name}</h2>
-      <p>
-        latitude: {location.lat}, longitude: {location.lon}
-      </p>
-      <img
-        src={`https://maps.locationiq.com/v3/staticmap?key=${API_KEY}&center=${location.lat},${location.lon}>&zoom=13&format=png`}
-      />
-    </>
+    <main>
+      <div className="search">
+        <h1>City Locator</h1>
+        <form onSubmit={getLocation}>
+          <input onChange={handleChange} placeholder="Location" />
+          <button className="explore-btn">Explore!</button>
+        </form>
+      </div>
+      <div className="display">
+        <p>Longitude: {location.lon}</p>
+        <p>Latitude: {location.lat}</p>
+        <h2>City: {location.display_name}</h2>
+        <img
+          src={`https://maps.locationiq.com/v3/staticmap?key=${API_KEY}&center=${location.lat},${location.lon}>&zoom=13&format=png`}
+        />
+      </div>
+    </main>
   );
 }
 
